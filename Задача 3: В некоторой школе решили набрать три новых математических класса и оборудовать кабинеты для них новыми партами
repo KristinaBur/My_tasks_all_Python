@@ -10,3 +10,8 @@ c = int(input('Введите количество учеников в 3 кла�
 print(math.ceil((a+b+c)/2))
 
 
+2. a = int(input())
+b = int(input())
+c = int(input())
+
+print((a + b + c + 1) // 2)
