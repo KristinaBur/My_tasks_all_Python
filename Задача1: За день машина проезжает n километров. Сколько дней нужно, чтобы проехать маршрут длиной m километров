@@ -33,5 +33,8 @@ result = ((m + n)-1) // n
 print(f"полученное число дней: {result}")
 
 
+5. print((m := int(input())) // (n := int(input())) + (m % n > 0))
+
+
 
 
