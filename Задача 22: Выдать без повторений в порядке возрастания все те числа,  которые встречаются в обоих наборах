@@ -1,0 +1,33 @@
+Задача 22: Даны два неупорядоченных набора целых чисел (может быть, с повторениями). Выдать без повторений в порядке возрастания все те числа, 
+которые встречаются в обоих наборах.
+Пользователь вводит 2 числа. n - кол-во элементов первого множества. m - кол-во элементов второго множества. Затем пользователь вводит сами элементы множеств.
+
+1.
+n = int(input('Введите количество элементов первого множества: '))
+m = int(input('Введите количество элементов второго множества: '))
+a = list(map(int, input('Введите элементы первого множества: ').split()))
+b = list(map(int, input('Введите элементы второго множества: ').split()))
+result=list(set(a) & set(b))
+result.sort()
+print(result)
+
+
+
+2. 
+n, m = input().split()
+first = [int(i) for i in input().split()]
+second = [int(j) for j in input().split()]
+
+print(*sorted(set(first).intersection(second)))
+
+
+3.
+import random
+
+lenght_list_1 = int(input('Первое число : '))
+lenght_list_2 = int(input('Второе число : '))
+list_1 = [random.randint(1, 20) for _ in range(lenght_list_1)]
+list_2 = [random.randint(1, 20) for _ in range(lenght_list_2)]
+print(f'Первый список: {list_1}')
+print(f'Второй список: {list_2}')
+print(f'Список пересечения: {sorted(set(list_1).intersection(set(list_2)))}')
