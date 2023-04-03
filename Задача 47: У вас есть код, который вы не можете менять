@@ -25,7 +25,7 @@ ok
 
 
 
-
+1. 
 trasformation = lambda x: x #так как у нас копирование списка, мы передали его в фунцию и его же вывели. 
 values = [1, 23, 42, 'asdfg']
 transformed_values = list(map(trasformation, values))
@@ -33,3 +33,14 @@ if values == transformed_values:
  print('ok')
 else:
  print('fail')
+ 
+ 
+ 2.
+Для анонимной функции (lambda) не обязательно заводить переменную, функцию сразу можно прописать в сроке 41
+values = [1, 23, 42, 'asdfg']
+transformed_values = list(map(lambda x: x, values))
+if values == transformed_values:
+ print('ok')
+else:
+ print('fail')
+ 
